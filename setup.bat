@@ -10,12 +10,20 @@ pip install numpy
 pip install matplotlib
 pip install pandas
 pip install scikit-learn
-ECHO Upgrading Packages
-pip install --upgrade pandas
-pip install --upgrade numpy
-pip install --upgrade matplotlib
-pip install --upgrade scikit-learn
-ECHO All Done
 python "Simple Linear Regression.py"
+ECHO Uninstalling Packages
+pip uninstall pandas
+pip uninstall cycler
+pip uninstall joblib
+pip uninstall kiwisolver
+pip uninstall pyparsing
+pip uninstall python-dateutil
+pip uninstall pytz
+pip uninstall scipy
+pip uninstall six
+pip uninstall numpy
+pip uninstall matplotlib
+pip uninstall scikit-learn
+ECHO All Done
 cd..
 final.bat
