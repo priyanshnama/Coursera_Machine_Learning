@@ -1,5 +1,4 @@
 from typing import Any, Union
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
