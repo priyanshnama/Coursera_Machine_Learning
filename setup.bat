@@ -10,7 +10,7 @@ pip install numpy
 pip install matplotlib
 pip install pandas
 pip install scikit-learn
-python "Simple Linear Regression.py"
+python "code.py"
 ECHO Uninstalling Packages
 pip uninstall pandas
 pip uninstall cycler

@@ -8,7 +8,7 @@ from sklearn import linear_model
 from sklearn.metrics import r2_score
 
 
-df = pd.read_csv("FuelConsumption.csv")
+df = pd.read_csv("../data resources/FuelConsumption.csv")
 cdf = df[['ENGINESIZE', 'CYLINDERS', 'FUELCONSUMPTION_COMB', 'CO2EMISSIONS']]
 msk = np.random.rand(len(df)) < 0.8
 train: Union[Union[ExtensionArray, Series, None, DataFrame], Any] = cdf[msk]

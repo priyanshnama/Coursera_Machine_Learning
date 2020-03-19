@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 from sklearn import linear_model
 
-df = pd.read_csv("FuelConsumption.csv")
+df = pd.read_csv("../data resources/FuelConsumption.csv")
 cdf = df[
     ['ENGINESIZE', 'CYLINDERS', 'FUELCONSUMPTION_CITY', 'FUELCONSUMPTION_HWY', 'FUELCONSUMPTION_COMB', 'CO2EMISSIONS']]
 msk = np.random.rand(len(df)) < 0.8
