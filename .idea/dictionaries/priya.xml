@@ -2,6 +2,8 @@
   <dictionary name="priya">
     <words>
       <w>coursera</w>
+      <w>matplotlib</w>
+      <w>scikit</w>
     </words>
   </dictionary>
 </component>
