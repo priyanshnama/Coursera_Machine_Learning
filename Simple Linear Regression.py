@@ -1,6 +1,10 @@
+from typing import Any, Union
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from pandas import DataFrame, Series
+from pandas.core.arrays import ExtensionArray
 from sklearn import linear_model
 from sklearn.metrics import r2_score
 
@@ -8,7 +12,7 @@ from sklearn.metrics import r2_score
 df = pd.read_csv("FuelConsumption.csv")
 cdf = df[['ENGINESIZE', 'CYLINDERS', 'FUELCONSUMPTION_COMB', 'CO2EMISSIONS']]
 msk = np.random.rand(len(df)) < 0.8
-train = cdf[msk]
+train: Union[Union[ExtensionArray, Series, None, DataFrame], Any] = cdf[msk]
 test = cdf[~msk]
 
 regr = linear_model.LinearRegression()
