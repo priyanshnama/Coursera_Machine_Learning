@@ -1,6 +1,6 @@
 @ECHO OFF 
 :: This batch file install basic requirements listed in requirements.txt
-TITLE Setting up things
+TITLE Machine Learning
 python --version
 pip --version
 ECHO Upgrading pip
