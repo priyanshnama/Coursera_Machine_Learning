@@ -17,4 +17,5 @@ pip install --upgrade matplotlib
 pip install --upgrade scikit-learn
 ECHO All Done
 python "Simple Linear Regression.py"
-PAUSE
+cd..
+final.bat
